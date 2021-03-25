@@ -1,0 +1,157 @@
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    
+}
+header .pc{
+   display: none;
+}
+/*Style for head */
+header{
+    width: 100%;
+    height: 60px;
+    background-color:#1f2605 ;
+}
+/*Style div  h1  in head*/
+header .mobile .h1 {
+    width: 87%;
+    float: right;
+    margin: auto;
+}
+header .mobile .h1 h1{
+    
+    font-family: 'Lalezar', cursive;
+    color: #ffff;
+    padding: 1%;
+    text-align: center;
+}
+/*Style div img in head*/
+header .mobile .img{
+    width: 13%;
+    float: left;
+}
+header .mobile .img img{
+    width: 50px;
+    
+   
+}
+
+/*End Style for head */
+/*nav Style */
+nav{
+    margin: 10px;
+    z-index: 2;
+    width: 100px;
+    display: none; 
+    box-shadow: 10px 10px 10px red;
+    transition: all 1s linear;
+    background-color: #ff4a9e;
+    text-align: center;
+    color:#fff;
+}
+nav >div{
+    background-color: red;
+    height: 33%;
+    text-align: center;
+}
+nav>div a {
+    font-family: 'Lalezar', cursive;
+    cursor: pointer;
+    color: #000;
+    text-decoration: none;
+}
+/*End style for nav*/
+/*Style for content*/
+/*style for about*/
+.content .about{
+    font-family: 'Lalezar', cursive;
+    margin: 10% auto;
+    width: 90%;
+    background-color:#dbdbdb;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 5px 5px 10px rgb(36, 36, 36),
+              -5px -5px 10px rgb(36, 36, 36);
+              
+}
+
+.content .about p:hover,.content .about p:active{
+    color: #fff;
+    font-size: 45px;
+}
+
+/*style facebook*/
+.facebook h1{
+    font-size: 40px;
+    font-family: 'Lalezar', cursive;
+   
+}
+.facebook{
+    margin: auto;
+    text-align: center;
+}
+.facebook img{
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgb(36, 36, 36),
+                -5px -5px 10px rgb(36, 36, 36)
+}
+/*End style facebook*/
+/*Style for contact*/
+.contact{
+    font-family: 'Lalezar', cursive;
+    text-align: center;
+    width: 90%;
+    background-color:#dbdbdb;
+    margin: 10% auto;
+    box-shadow: 5px 5px 10px rgb(36, 36, 36),
+                -5px -5px 10px rgb(36, 36, 36);
+    
+}
+/*style for image in contact */
+.contact img{
+    width: 50px;
+}
+/*End for contact*/
+/*End Style for content*/
+
+/*Style for pc*/
+@media screen and (min-width:900px){
+    /*head style */
+    header .mobile{
+      display: none;
+    }
+    header .pc{
+        font-family: 'Lalezar', cursive;
+        color: #fff;
+        display: block;
+    }
+    header .pc .h1 {
+        width: 60%;
+        text-align: center;
+        float: right;
+        
+
+    }
+    header .pc .nav ul li{
+        text-decoration: none;
+        float: left;
+        margin-left:10px ;
+        
+        font-size: 40px;
+        list-style: none;
+    }
+    header .pc .nav ul li a{
+        list-style: none;
+        color: #fff;
+        text-decoration: none;
+
+    }
+    header .pc .nav ul li a:hover{
+        font-size: 50px;
+        color: red;
+        
+
+    }
+    /*End head style */
+    /*style for facebook*/
+    
+}
